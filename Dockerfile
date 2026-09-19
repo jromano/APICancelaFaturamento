@@ -14,7 +14,7 @@ RUN dotnet publish "APICancelaFaturamento.csproj" \
     --no-restore
 
 
-FROM mcr.microsoft.com/dotnet/aspnet:10.0
+FROM mcr.microsoft.com/dotnet/aspnet:10.0 AS final
 
 WORKDIR /app
 
