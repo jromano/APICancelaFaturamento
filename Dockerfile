@@ -1,10 +1,12 @@
-# Etapa de compilação
 FROM mcr.microsoft.com/dotnet/sdk:10.0 AS build
 
 WORKDIR /src
 
+COPY APICancelaFaturamento.csproj .
 
 RUN dotnet restore "APICancelaFaturamento.csproj"
+
+COPY . .
 
 RUN dotnet publish "APICancelaFaturamento.csproj" \
     -c Release \
@@ -12,8 +14,7 @@ RUN dotnet publish "APICancelaFaturamento.csproj" \
     --no-restore
 
 
-# Etapa de execução
-FROM mcr.microsoft.com/dotnet/aspnet:10.0 AS final
+FROM mcr.microsoft.com/dotnet/aspnet:10.0
 
 WORKDIR /app
 
