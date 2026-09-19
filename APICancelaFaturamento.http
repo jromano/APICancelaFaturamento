@@ -1,0 +1,24 @@
+@APICancelaFaturamento_HostAddress = https://localhost:7014
+x-api-key: APICANCELA-FATURAMENTO-TESTE
+
+POST {{APICancelaFaturamento_HostAddress}}/api/recebimento
+Content-Type: application/json
+Accept: application/json
+
+{
+  "idPedido": "PED-001",
+  "documento": "12345678900",
+  "nomeCliente": "Cliente Exemplo",
+  "valorTotal": 1500.00,
+  "observacao": "Pedido de teste",
+  "itens": [
+    {
+      "codigo": "PROD-001",
+      "descricao": "Produto Exemplo",
+      "quantidade": 2,
+      "valorUnitario": 750.00
+    }
+  ]
+}
+
+###
