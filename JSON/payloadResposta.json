@@ -16,7 +16,7 @@
                     {
                         "criterio": "anexos_obrigatorios",
                         "resultado": true,
-                        "peso": 40,
+                        "peso": 40.0,
                         "origem": "deterministico",
                         "justificativa": "Anexos encontrados por presença de texto: ['Instrumento de cessão assinado'] (lógica: unico)",
                         "documento": "teste.pdf",
@@ -25,7 +25,7 @@
                     {
                         "criterio": "palavras_chave_presentes",
                         "resultado": true,
-                        "peso": 20,
+                        "peso": 20.0,
                         "origem": "deterministico",
                         "justificativa": "Palavras-chave encontradas por presença de texto: ['Cessionário']",
                         "documento": "teste.pdf",
@@ -34,7 +34,7 @@
                     {
                         "criterio": "loja_fantasia",
                         "resultado": true,
-                        "peso": 20,
+                        "peso": 20.0,
                         "origem": "deterministico",
                         "justificativa": "Nome fantasia 'Loja Exemplo' encontrado nos documentos anexados (RF06).",
                         "documento": "teste.pdf",
@@ -43,7 +43,7 @@
                     {
                         "criterio": "logica_palavras_chave_semantica",
                         "resultado": true,
-                        "peso": 40,
+                        "peso": 40.0,
                         "origem": "ia",
                         "justificativa": "A regra de negócio \"Qualquer uma valida\" é atendida, pois o documento é um \"Instrumento de cessão\".",
                         "documento": null,
@@ -52,7 +52,7 @@
                     {
                         "criterio": "assinatura_presente",
                         "resultado": false,
-                        "peso": 20,
+                        "peso": 20.0,
                         "origem": "ia",
                         "justificativa": "O texto menciona \"assinado\", mas não descreve a presença física das assinaturas das partes nomeadas no documento, conforme a instrução.",
                         "documento": null,
@@ -75,7 +75,7 @@
         }
     ],
     "sugestao_melhoria": {
-        "mensagem": "A sua solicitação de cancelamento foi reprovada. Para o recibo 02135-64-001, o documento enviado menciona que está assinado, mas é preciso que as assinaturas físicas das partes envolvidas estejam visíveis no documento. Por favor, anexe uma cópia do documento onde as assinaturas possam ser claramente vistas para que possamos prosseguir com a aprovação.",
-        "pontuacao_conformidade": 65
+        "mensagem": "Prezado(a) solicitante, sua solicitação de cancelamento para o recibo 02135-64-001 foi reprovada. Para que possamos aprová-la, é necessário que o documento anexado mostre claramente as assinaturas físicas de todas as partes envolvidas. Apenas a menção de que o documento foi assinado não é suficiente. Por favor, revise e anexe o documento com as assinaturas visíveis para uma nova tentativa.",
+        "pontuacao_conformidade": 30.0
     }
 }
