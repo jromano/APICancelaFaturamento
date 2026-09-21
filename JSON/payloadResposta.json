@@ -1,69 +1,81 @@
 {
-  "companhiaSolicitante": "",
-  "areaSolicitante": "MELHOR_CONTINUA_CSC",
-  "idJde": "",
-  "nomeSolicitante": "Administrador",
-  "motivoCancelamento": "01 - Cancelamento",
-  "origemCancelamento": "02 - Reajuste",
-  "tipoLoja": "Pessoa Jurídica",
-  "loja": "Nome da Loja Envolvida",
-  "cnpjLoja": "45.656.565/6596-54",
-  "cpfLoja": "",
-  "luc": "12332",
-  "tipoFaturamento": "MULT (Multa Contratuais)",
-  "companhia": "ANCAR GESTAO DE EMPREENDIMENTOS LTDADF",
-  "codigoCompanha": "00100",
-  "cnpjCompanhia": "00.847.590/0001-92",
-  "abrevCompanhia": null,
-  "gridCancelar": [
-    {
-      "valor": "822.18",
-      "competencia": "07/2026",
-      "numeroRecibo": "02135-64-001",
-      "dataVencimentoRecibo": "2026-09-16",
-      "tipoFaturamento1": "FINA (Financiamento)",
-      "tipoFaturamento2": "null"
-    },
-    {
-      "valor": "200.00",
-      "competencia": "08/2026",
-      "numeroRecibo": "02135-64-001",
-      "dataVencimentoRecibo": "2026-09-18",
-      "tipoFaturamento1": "FINA (Financiamento)",
-      "tipoFaturamento2": ""
+    "chamado_id": "846949",
+    "resultados": [
+        {
+            "numero_recibo": "02135-64-001",
+            "boleto_encontrado_vs": false,
+            "vs_indisponivel": false,
+            "divergencias_vs": [],
+            "motor_de_regras": {
+                "motivo_codigo": "01",
+                "origem_codigo": "01",
+                "status": "avaliado",
+                "score": 85.71,
+                "aprovado": false,
+                "detalhes": [
+                    {
+                        "criterio": "anexos_obrigatorios",
+                        "resultado": true,
+                        "peso": 40,
+                        "origem": "deterministico",
+                        "justificativa": "Anexos encontrados por presença de texto: ['Instrumento de cessão assinado'] (lógica: unico)",
+                        "documento": "teste.pdf",
+                        "pagina": 1
+                    },
+                    {
+                        "criterio": "palavras_chave_presentes",
+                        "resultado": true,
+                        "peso": 20,
+                        "origem": "deterministico",
+                        "justificativa": "Palavras-chave encontradas por presença de texto: ['Cessionário']",
+                        "documento": "teste.pdf",
+                        "pagina": 1
+                    },
+                    {
+                        "criterio": "loja_fantasia",
+                        "resultado": true,
+                        "peso": 20,
+                        "origem": "deterministico",
+                        "justificativa": "Nome fantasia 'Loja Exemplo' encontrado nos documentos anexados (RF06).",
+                        "documento": "teste.pdf",
+                        "pagina": 1
+                    },
+                    {
+                        "criterio": "logica_palavras_chave_semantica",
+                        "resultado": true,
+                        "peso": 40,
+                        "origem": "ia",
+                        "justificativa": "A regra de negócio \"Qualquer uma valida\" é atendida, pois o documento é um \"Instrumento de cessão\".",
+                        "documento": null,
+                        "pagina": null
+                    },
+                    {
+                        "criterio": "assinatura_presente",
+                        "resultado": false,
+                        "peso": 20,
+                        "origem": "ia",
+                        "justificativa": "O texto menciona \"assinado\", mas não descreve a presença física das assinaturas das partes nomeadas no documento, conforme a instrução.",
+                        "documento": null,
+                        "pagina": null
+                    }
+                ],
+                "justificativa_pendencia": null
+            }
+        }
+    ],
+    "status": "avaliado",
+    "score": 85.71,
+    "aprovado": false,
+    "documentos_extraidos": [
+        {
+            "nome_arquivo": "teste.pdf",
+            "paginas": [
+                "Instrumento de cessão assinado. Cessionário de acordo. Loja Exemplo."
+            ]
+        }
+    ],
+    "sugestao_melhoria": {
+        "mensagem": "A sua solicitação de cancelamento foi reprovada. Para o recibo 02135-64-001, o documento enviado menciona que está assinado, mas é preciso que as assinaturas físicas das partes envolvidas estejam visíveis no documento. Por favor, anexe uma cópia do documento onde as assinaturas possam ser claramente vistas para que possamos prosseguir com a aprovação.",
+        "pontuacao_conformidade": 65
     }
-  ],
-  "todosAnexos": [
-    {
-      "anexo": "teste_Cancelamento1.pdf:2574d7e4-3a51-423f-80df-7375b99bfe5c",
-      "descricao": "Informações Adicionais - Anexo 1",
-      "identificador": "1374145",
-      "nomeArquivo": "teste_Cancelamento1.pdf",
-      "chaveArquivo": "2574d7e4-3a51-423f-80df-7375b99bfe5c",
-      "nomeCampo": "Grid_ANX_Adicionais"
-    },
-    {
-      "anexo": "teste_Cancelamento2.pdf:93dfaa6d-540b-4b4d-8d0b-090e10415e2f",
-      "descricao": "Informações Adicionais - Anexo 2",
-      "identificador": "1374146",
-      "nomeArquivo": "teste_Cancelamento2.pdf",
-      "chaveArquivo": "93dfaa6d-540b-4b4d-8d0b-090e10415e2f",
-      "nomeCampo": "Grid_ANX_Adicionais"
-    },
-    {
-      "anexo": "image.png:7f5a6ef8-82a6-4132-beb4-e15b1252454c",
-      "descricao": "",
-      "identificador": "1374147",
-      "nomeArquivo": "image.png",
-      "chaveArquivo": "7f5a6ef8-82a6-4132-beb4-e15b1252454c",
-      "nomeCampo": "documentacao"
-    }
-  ],
-  "rbClausula": "Sim, há a cláusula padrão",
-  "tipoInconsistencia": "",
-  "dataCancelamento": null,
-  "ajusteConsideracoes": "",
-  "codigoProcesso": "846954",
-  "codigoEtapa": "2",
-  "codigoCiclo": "1"
 }
