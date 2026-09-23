@@ -65,7 +65,7 @@
     ],
     "status": "avaliado",
     "score": 85.71,
-    "aprovado": false,
+    "aprovado": true,
     "documentos_extraidos": [
         {
             "nome_arquivo": "teste.pdf",
