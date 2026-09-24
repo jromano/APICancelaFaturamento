@@ -64,8 +64,8 @@
         }
     ],
     "status": "avaliado",
-    "score": 85.71,
-    "aprovado": false,
+    "score": 96.07,
+    "aprovado": true,
     "documentos_extraidos": [
         {
             "nome_arquivo": "teste.pdf",
@@ -75,7 +75,7 @@
         }
     ],
     "sugestao_melhoria": {
-        "mensagem": "Prezado(a) solicitante, sua solicitação de cancelamento para o recibo 02135-64-001 foi reprovada. Para que possamos aprová-la, é necessário que o documento anexado mostre claramente as assinaturas físicas de todas as partes envolvidas. Apenas a menção de que o documento foi assinado não é suficiente. Por favor, revise e anexe o documento com as assinaturas visíveis para uma nova tentativa.",
+        "mensagem": "Prezado(a) solicitante, sua solicitação de cancelamento foi aprovada.",
         "pontuacao_conformidade": 30.0
     }
 }
